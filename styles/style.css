@@ -7,20 +7,288 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  color:  #000000;
 }
+
+.link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.link_footer {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ======================= margin ======================= */
+
+.margin_0 {
+  margin: 0;
+}
+
+.margin-top_20 {
+  margin:20px auto 0;
+}
+
+.margin_auto {
+  margin: 0 auto;
+}
+
+.margin_100px {
+  margin: 100px 0;
+}
+
+.margin_90px {
+  margin: 90px 0;
+}
+/* ======================= padding ======================= */
+
+.padding_90px {
+  padding: 90px 0;
+}
+
+/* ======================= blocks ======================= */
+
+.logo {
+  width: 228px;
+  height: 32px;
+  background-position: center;
+  background-size: cover;
+
+  z-index: 2;
+}
+
+.section-title {
+  width: 60%;
+  display: flex;
+}
+
+.section-subtitle {
+  width: 60%;
+  display: flex;
+}
+
+.table {
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.section-title__text {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.section-subtitle__text {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  z-index: 1;
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+/* ======================= header ======================= */
 
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  position: relative;
+  overflow: hidden;
+}
+
+.header__title {
+  width: 730px;
+  margin-left: 64px;
+  z-index: 2;
+}
+
+.header__subtitle {
+  width: 388px;
+
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  z-index: 2;
+}
+
+.header__title-text {
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
+}
+
+.header__subtitle-text {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/*.header__link {
+  line-height: ;
+  font-size: ;
+  font-weight: ;
+} */
+
+.logo_place_header {
+  background-image: url(../images/logo_place_header.svg);
+
+  position: absolute;
+  left: 64px;
+  top: 30px;
+}
+
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  background-image: url(../images/header-image.png);
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
+
+  position: absolute;
+  top: 64px;
+  right: 0px;
+  background-color: #2f80ed;
 }
+
+/* ======================= description ======================= */
+
+.description {
+  display: flex;
+  justify-content: center;
+}
+
+.two-columns {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-columns__brief {
+  width: 175px;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__paragraph_margin_30px {
+  margin: 30px 0;
+}
+
+.two-columns__brief-text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.two-columns__paragraph-text {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* ======================= digits ======================= */
+
+.table__cell_theme_white {
+  width: 250px;
+  margin-right: 0;
+  margin-top: 60px;
+}
+
+/* ======================= feynman ======================= */
+
+  .feynman {
+    background-color: #f2f2f2;
+    height: 890px;
+    position: relative;
+
+    background-image: url(../images/feynman.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+  }
+
+  .feynman__title {
+    width: 648px;
+    z-index: 1;
+  }
+
+  .feynman__subtitle {
+    z-index: 1;
+  }
+
+  .feynman__subtitle-text {
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  .feynman__title-text {
+    line-height: 1.15;
+    font-size: 120px;
+    font-weight: 600;
+    text-align: center;
+
+    padding: 100px 0 70px;
+  }
+
+  .feynman__link {
+    position: absolute;
+    top: 50%;
+    right: 48px;
+
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+  }
+
+  /* ======================= kaufman ======================= */
+  .kaufman {
+    color: #fff;
+    background-color: #1f1f1f;
+
+    position: relative;
+    overflow: hidden;
+  }
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
@@ -28,4 +296,83 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+  z-index: 1;
+}
+
+.kaufman__triangle {
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  right: -210px;
+  top: 0px;
+
+  background-image: url(../images/kaufman-triangle.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+ /* ======================= footer ======================= */
+
+.footer {
+  background-color: #1f1f1f;
+  color: #fff;
+  min-height: 350px;
+  display: flex;
+}
+
+.footer__columns {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+
+  margin: 60px auto 40px;
+}
+
+.footer__columns_content_copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  flex-basis: 711px;
+}
+
+.footer__columns_content_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__columns_content_social {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column-links {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 16px;
+}
+
+.logo_place_footer {
+  background-image: url(../images/logo_place_footer.svg);
+}
+
+.footer__author {
+  margin: 18px 0;
+
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer__column-link {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
 }
