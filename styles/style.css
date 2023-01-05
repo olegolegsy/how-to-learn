@@ -101,6 +101,7 @@
 
 .header__subtitle {
   width: 388px;
+  margin: 0;
 
   position: absolute;
   left: 64px;
@@ -170,6 +171,7 @@
 
 .two-columns__brief {
   width: 175px;
+  margin: 0;
 
   line-height: 1.2;
   font-size: 18px;
